@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Caesar+Dressing&family=Nunito:wght@300;400;600&display=swap');
+
+/* Mobile first */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+ul, li, header nav {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+li {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity .1s ease;
+}
+li:hover {
+    opacity: 1;
+}
+h1 {
+    font-family: 'Caesar Dressing';
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+header {
+    display: flex;
+    justify-content: center;
+    padding: 1.8rem 0;
+    border-bottom: 1px solid rgb(215, 215, 215);
+    margin-bottom: 2rem;
+}
+.header-container {
+    display: flex;
+    max-width: 1160px;
+    width: 100%;
+    justify-content: space-around;
+}
+header img {
+    height: 30px;
+}
+.sumir-mobile {
+    display: none;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main ul {
+    width: 40vw;
+    justify-content: space-around;
+    font-weight: 600;
+}
+main section {
+    margin-top: 2rem;
+}
+.main-row {
+    width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.first-row-itens, .second-row-itens {
+    cursor: pointer;
+    height: 23.5rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #E0E0E0;
+    justify-content: flex-end;
+    padding: 1rem;
+    transition: transform .2s ease , box-shadow .2s ease;
+}
+.first-row-itens:hover,
+.second-row-itens:hover {
+    transform: scale(101%);
+    box-shadow: 0 0 10px rgb(34, 0, 255);
+}
+.first-row-itens {
+    margin: 0 0 1.5rem 0;
+}
+h5 {
+    font-weight: 300;
+    margin: .5rem 0;
+}
+h2 {
+    font-weight: 400;
+}
+.primeira-caixa {
+    background-image: url(./assets/img.jpg);
+}
+.segunda-caixa {
+    background-image: url(./assets/img\ \(2\).jpg);
+}
+.terceira-caixa {
+    background-image: url(./assets/hero\ 1.png);
+}
+.quarta-caixa {
+    background-image: url(./assets/img\ \(1\).jpg);
+}
+.carregar-mais {
+    cursor: pointer;
+    margin: 2rem 0;
+    display: flex;
+    align-items: center;
+    min-width: 10rem;
+    justify-content: space-between;
+}
+footer {
+    display: flex;
+    font-weight: 600;
+    justify-content: space-around;
+    padding: 1rem 0;
+    border-top: 1px solid rgb(215, 215, 215);
+}
+footer section {
+    cursor: pointer;
+}
+footer ul {
+    justify-content: space-between;
+    flex-direction: column;
+    max-width: 25rem;
+    width: 100%;
+}
+footer ul li {
+    margin: 1rem 0;
+}
+/* 
+    mudanças para Desktop
+*/
+@media (min-width: 700px) {
+    .sumir-mobile {
+        display: flex;
+    }
+    .sumir-desktop {
+        display: none;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    header nav, header ul {
+        max-width: 12rem;
+        width: 100%;
+        justify-content: space-between;
+    }
+    .main-row {
+        width: 75vw;
+    }
+    .first-row-itens {
+        max-width: 23.5vw;
+    }
+    footer section {
+        align-items: center;
+    }
+    footer ul {
+        flex-direction: row;
+    }
+}
